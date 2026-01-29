@@ -32,7 +32,7 @@ function Solution({ sectionRef }) {
 
     {/* YOUR IMAGE */}
     <img
-      src="public/profile.jpg"
+      src="/profile.jpg"
       alt="Brian De Jesus"
       className="profile-photo"
     />
