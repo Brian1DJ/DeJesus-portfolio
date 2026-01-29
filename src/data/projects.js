@@ -3,41 +3,29 @@
 
 export const projects = [
   {
-  id: 1,
-  year: 2023,
-  quarter: 'Q2',
-  title: 'AX Fitness Website',
-  type: 'web',
-
-  problem: 'AX Fitness relied entirely on walk-ins and word-of-mouth. There was no website, no online presence, and no clear way for gym-goers to view services, schedules, or promotions. Everything—from inquiries to membership details—was handled manually on-site.',
-
-  solution: 'Designed and built a responsive website that introduced AX Fitness online. The site presents services, pricing, schedules, and contact details in one place, giving gym-goers a clear, modern way to understand the gym before ever stepping inside.',
-
-  result: 'Improved first-time inquiries and reduced in-person questions by centralizing information, giving the gym a professional digital presence for the first time.',
-
-  tech: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'PHP', 'MySQL'],
-
-  metrics: { 
-    users: 847, 
-    engagement: '+23%' 
+    id: 1,
+    year: 2023,
+    quarter: 'Q1',
+    title: 'Campus Event Aggregator',
+    type: 'web',
+    problem: 'Students missed events because announcements were scattered across 12+ Facebook groups, Discord servers, and email lists.',
+    solution: 'Built a centralized React dashboard that scraped and normalized event data from multiple sources, with filtering by category, date, and organization.',
+    result: '847 active users in first semester, 23% increase in event attendance measured by check-ins',
+    tech: ['React', 'Node.js', 'MongoDB', 'Puppeteer'],
+    metrics: { 
+      users: '847', 
+      engagement: '+23%' 
+    },
+    image: '/projects/event-aggregator.jpg', // Add your screenshot path
+    liveUrl: 'https://your-project.com', // Optional: live demo
+    repoUrl: 'https://github.com/yourusername/event-aggregator', // Optional: GitHub repo
+    previewable: true // Set to false if no live demo
   },
-
-  // 🔽 Add these
-  liveUrl: 'https://axfitness.vercel.app',     // your deployed site
-  repoUrl: 'https://github.com/you/ax-fitness', // optional
-  previewable: true,
-  screenshots: [
-    '/projects/axfitness/home.png',
-    '/projects/axfitness/services.png',
-    '/projects/axfitness/contact.png'
-  ]
-},
-,
   {
     id: 2,
     year: 2023,
     quarter: 'Q3',
-    title: 'Evaluation Management System for NU Employees',
+    title: 'Municipal Budget Transparency Portal',
     type: 'data',
     problem: 'Local government published 200-page PDF budget reports that residents couldn\'t easily understand or explore.',
     solution: 'Created an interactive dashboard with drill-down capabilities, comparing budget allocation across departments and years with real-time visualizations.',
@@ -45,8 +33,12 @@ export const projects = [
     tech: ['React', 'D3.js', 'Python', 'Pandas'],
     metrics: { 
       sessions: '12k', 
-      impact: 'City council presentation' 
-    }
+      impact: 'City council' 
+    },
+    image: '/projects/budget-portal.jpg',
+    liveUrl: 'https://budget-demo.com',
+    repoUrl: 'https://github.com/yourusername/budget-portal',
+    previewable: true
   },
   {
     id: 3,
@@ -61,7 +53,11 @@ export const projects = [
     metrics: { 
       latency: '<100ms', 
       sessions: '200+' 
-    }
+    },
+    image: '/projects/whiteboard.jpg',
+    liveUrl: null, // No live demo
+    repoUrl: 'https://github.com/yourusername/whiteboard',
+    previewable: false
   },
   {
     id: 4,
@@ -75,8 +71,12 @@ export const projects = [
     tech: ['Python', 'Constraint Propagation', 'React', 'SQLite'],
     metrics: { 
       accuracy: '94%', 
-      time: '8h → 12min' 
-    }
+      time: '−96%' 
+    },
+    image: '/projects/course-optimizer.jpg',
+    liveUrl: null,
+    repoUrl: 'https://github.com/yourusername/course-optimizer',
+    previewable: false
   },
   {
     id: 5,
@@ -90,25 +90,34 @@ export const projects = [
     tech: ['Python', 'Scikit-learn', 'NLTK', 'Matplotlib'],
     metrics: { 
       accuracy: '89%', 
-      insights: '3 product changes' 
-    }
+      insights: '3 fixes' 
+    },
+    image: '/projects/sentiment-analysis.jpg',
+    liveUrl: null,
+    repoUrl: 'https://github.com/yourusername/sentiment-analysis',
+    previewable: false
   }
 ];
+
 // Template for adding new projects:
 /*
 {
-  id: 6,                          // Increment from last project
-  year: 2024,                     // Project year
-  quarter: 'Q3',                  // Q1, Q2, Q3, or Q4
-  title: 'Project Name',          // Clear, descriptive title
-  type: 'web',                    // 'web', 'data', or 'system'
-  problem: '...',                 // What problem existed? Be specific.
-  solution: '...',                // What did you build? Include key tech decisions.
-  result: '...',                  // What was the measurable impact?
-  tech: ['Tech', 'Stack'],        // 4-6 most relevant technologies
-  metrics: {                      // 2-3 key metrics
+  id: 6,
+  year: 2024,
+  quarter: 'Q3',
+  title: 'Project Name',
+  type: 'web', // 'web', 'data', or 'system'
+  problem: 'What problem existed? Be specific.',
+  solution: 'What did you build? Include key tech decisions.',
+  result: 'What was the measurable impact?',
+  tech: ['Tech', 'Stack'], // 4-6 technologies
+  metrics: {
     metric1: 'value',
     metric2: 'value'
-  }
+  },
+  image: '/projects/project-name.jpg', // Screenshot path
+  liveUrl: 'https://demo.com', // Optional: null if not available
+  repoUrl: 'https://github.com/user/repo', // Optional: null if private
+  previewable: true // true if has live demo, false otherwise
 }
 */
