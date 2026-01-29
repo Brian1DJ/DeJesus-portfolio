@@ -24,6 +24,7 @@ function Solution({ sectionRef }) {
       'GitHub'
     ]
   };
+
   return (
     <section className="section section-solution" ref={sectionRef}>
       <div className="solution-grid">
@@ -32,7 +33,8 @@ function Solution({ sectionRef }) {
           <h2>The Solution</h2>
         </div>
         
-               <div className="solution-profile" data-observe="solution-profile">
+        {/* Photo and Description side by side */}
+        <div className="solution-profile" data-observe="solution-profile">
           <div className="profile-image">
             <div className="image-placeholder">
               {/* SVG FRAME */}
@@ -61,23 +63,23 @@ function Solution({ sectionRef }) {
               />
             </div>
           </div>
+
+          {/* Description beside photo */}
+          <div className="profile-text">
+            <h3>Recent graduate. Active builder.</h3>
+            <p>
+              Four years of turning "wouldn't it be cool if..." into working software. 
+              Specialized in taking messy, real-world problems and building clean solutions 
+              that people actually use.
+            </p>
+            <p>
+              Most comfortable in the space between design and engineering—where 
+              user needs meet technical constraints and interesting problems emerge.
+            </p>
+          </div>
         </div>
 
-
-          
-          <div className="solution-intro" data-observe="solution-intro">
-          <h3>Recent graduate. Active builder.</h3>
-          <p>
-            Four years of turning "wouldn't it be cool if..." into working software. 
-            Specialized in taking messy, real-world problems and building clean solutions 
-            that people actually use.
-          </p>
-          <p>
-            Most comfortable in the space between design and engineering—where 
-            user needs meet technical constraints and interesting problems emerge.
-          </p>
-        </div>
-
+        {/* Skills Snapshot */}
         <div className="solution-skills" data-observe="solution-skills">
           <div className="skills-header">
             <h4>Skills Snapshot</h4>
@@ -100,6 +102,7 @@ function Solution({ sectionRef }) {
           </div>
         </div>
 
+        {/* How I Work */}
         <div className="solution-approach" data-observe="solution-approach">
           <h4>How I work</h4>
           <div className="approach-steps">
@@ -130,4 +133,5 @@ function Solution({ sectionRef }) {
     </section>
   );
 }
+
 export default Solution;
